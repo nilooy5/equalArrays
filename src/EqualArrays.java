@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class EqualArrays {
     public static void main(String[] args)
     {
+        System.out.println("Class Activity 2 by Munira Tabassum : ");
+
         Scanner input= new Scanner(System.in);
         System.out.print("Enter SIZE of First Array: ");
         int a = input.nextInt();
@@ -30,17 +32,13 @@ public class EqualArrays {
         Arrays.sort(arrayA);
         Arrays.sort(arrayB);
 
-        System.out.println("Class Activity 2 by Munira Tabassum : ");
-
-        System.out.println("Checking if the arrays are equal: ");
-
         for (int i = 0; i < arrayA.length; i++) {
             if (arrayA[i] != arrayB[i])
             {
-                System.out.print("Not Equal");
+                System.out.print("Arrays are NOT Equal");
                 return;
             }
         }
-        System.out.println("Equal");
+        System.out.println("Arrays are Equal");
     }
 }
